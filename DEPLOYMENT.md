@@ -3,10 +3,10 @@
 ## Architecture
 React 19, TypeScript, Tailwind v4 and TanStack Start. The platform's supported router is retained rather than React Router. Every public page is explicitly configured for prerendering in `vite.config.ts`. Company and directory content are static TypeScript data. No app API, authentication, database query, email sending service or upload is used.
 
-Lovable Cloud tables and private storage were provisioned during the original brief, before the revised static brief arrived. They are unused, contain no website enquiry records and are not connected to the website. They have no public access policies. They are not required for this website and have not been destructively removed.
+Previously provisioned database tables and private storage from the original brief are unused, contain no website enquiry records and are not connected to the website. They have no public access policies. They are not required for this website and have not been destructively removed.
 
 ## Development and tests
-Install with `bun install`, run development with `bun run dev`, and run tests with `bun run test`. The Lovable harness performs builds automatically. Outside Lovable, use the configured production build and inspect the generated route HTML output; for a static-only host publish the prerendered public output, not the worker/server output. Verify every path in the list below has an `index.html` and that assets are included. Do not add a second client router or generic hosting fallback configuration inside this project.
+Install with `bun install`, run development with `bun run dev`, and run tests with `bun run test`. Use the configured production build and inspect the generated route HTML output; for a static-only host publish the prerendered public output, not the worker/server output. On Vercel, the Nitro Vercel preset is auto-detected during builds. Verify every path in the list below has an `index.html` and that assets are included. Do not add a second client router or generic hosting fallback configuration inside this project.
 
 Public pages: `/`, `/about`, `/capabilities`, `/materials`, `/industries`, `/facility`, `/quality`, `/products`, `/contact`, `/privacy`, `/terms`.
 

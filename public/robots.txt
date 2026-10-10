@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://id-preview--7cc1fdb2-5293-4f97-b6fe-56b3826d8155.lovable.app/sitemap.xml
+Sitemap: https://micro-tools-and-services.vercel.app/sitemap.xml
